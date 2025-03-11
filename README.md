@@ -2,12 +2,16 @@
 
 - [Prof Matheus Jardim Bernardes](https://matheusjardimb.com/)
 - [Atitus.edu.br](https://atitus.edu.br/)
+- [Cauê De Castro Cortes](https://github.com/CaueCastroCortes)
 
 Exercícios de aula da disciplina de Pensamento Computacional.
 
 ## Sobre mim
 
---PREENCHER--
+Sou estudante de ciência da computação no primeiro semestre e busco aprender e reproduzir o máximo possivel.
+
+![Atitus Ciencia da Computacao](image-1.png) 
+
 
 ## DICAS:
 
