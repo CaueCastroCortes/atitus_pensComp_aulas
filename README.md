@@ -12,7 +12,6 @@ Sou estudante de ciência da computação no primeiro semestre e busco aprender 
 
 ![Atitus ciencia da computacao](image.png)
 
-
 ## DICAS:
 
 - Entenda completamente o que o exercício solicita ANTES de começar a programar.
@@ -76,3 +75,4 @@ pre-commit install
 | Uva     | 400 g  |
 | Banana  | 1,5 Kg |
 | Maçã | 800 g |
+
