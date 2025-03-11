@@ -61,3 +61,18 @@ Caso esteja usando o [Git](https://git-scm.com/), considere utilizar o pre-commi
 ```bash
 pre-commit install
 ```
+ ## Lista de compra
+
+1. Item Laranja 
+2. Item Uva
+3. Item Banana 
+4. Item Maçã
+
+### Tabela de Frutas da semana 
+
+| Frutas  | Peso   |             
+| ------- | ------ |
+| Laranja | 1 Kg   |
+| Uva     | 400 g  |
+| Banana  | 1,5 Kg |
+| Maçã | 800 g |
