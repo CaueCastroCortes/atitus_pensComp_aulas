@@ -10,7 +10,7 @@ Exercícios de aula da disciplina de Pensamento Computacional.
 
 Sou estudante de ciência da computação no primeiro semestre e busco aprender e reproduzir o máximo possivel.
 
-![Atitus](image.png)
+![alt text](image-2.png))
 
 ## DICAS:
 
@@ -25,7 +25,8 @@ Sou estudante de ciência da computação no primeiro semestre e busco aprender 
 ## Fork do projeto
 
 Para criar o seu próprio projeto, clique no botão 'Fork' no topo da tela
-em [https://github.com/matheusjardimb/atitus_pensComp_aulas/](https://github.com/matheusjardimb/atitus_pensComp_aulas/).
+em [https://github.com/matheusjardimb/atitus_pensComp_aulas/](https://github.com/matheusjardimb/atitus_pensComp_aulas/)(https://atitus.edu.br/nossamarca)
+
 
 Após isso, será necessário ativar a execução das 'Actions'. Para isso, acesse o menu 'Actions' no topo da tela e clique
 na opção de ativar workflows.
