@@ -76,3 +76,7 @@ pre-commit install
 | Banana  | 1,5 Kg |
 | Maçã | 800 g |
 
+### Link para Bloco de Notas
+
+[Bloco de notas link](CaueCastroCortes/atitus_pensComp_aulas/ArquivoaulaLINK)
+
