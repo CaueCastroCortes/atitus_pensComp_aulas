@@ -10,7 +10,7 @@ Exercícios de aula da disciplina de Pensamento Computacional.
 
 Sou estudante de ciência da computação no primeiro semestre e busco aprender e reproduzir o máximo possivel.
 
-![alt text](image-2.png))
+![https://atitus.edu.br/nossamarca](image-2.png)
 
 ## DICAS:
 
