@@ -1,0 +1,331 @@
+Microsoft Windows [versão 10.0.19045.5608]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\1137896>python
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+KeyboardInterrupt
+>>>
+
+C:\Users\1137896>python
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> +1
+1
+>>> 1+1
+2
+>>>
+
+C:\Users\1137896>1+1
+'1+1' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\1137896>python
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2/8
+0.25
+>>> 20/2
+10.0
+>>> 2**3
+8
+>>> 10**5
+100000
+>>> 10***5
+  File "<python-input-4>", line 1
+    10***5
+        ^
+SyntaxError: invalid syntax
+>>> "caue"
+'caue'
+>>> "caue"3*3
+  File "<python-input-6>", line 1
+    "caue"3*3
+          ^
+SyntaxError: invalid syntax
+>>> "caue"*3
+'cauecauecaue'
+>>> "caue"*20
+'cauecauecauecauecauecauecauecauecauecauecauecauecauecauecauecauecauecauecauecaue'
+>>> "caue"*3/2
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    "caue"*3/2
+    ~~~~~~~~^~
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 10/3
+3.3333333333333335
+>>> 10//3
+3
+>>> 10//2
+5
+>>> 10//3
+3
+>>> 10%3
+1
+>>> 10mod2
+  File "<python-input-15>", line 1
+    10mod2
+     ^
+SyntaxError: invalid decimal literal
+>>> 11mod2
+  File "<python-input-16>", line 1
+    11mod2
+     ^
+SyntaxError: invalid decimal literal
+>>> 10%2
+0
+>>> 365/12
+30.416666666666668
+>>> 366/12
+30.5
+>>> 60%4
+0
+>>> 61%4
+1
+>>> 1997%4
+1
+>>> 1998%4
+2
+>>> 1996%4
+0
+>>> 1999%4
+3
+>>> 2000%4
+0
+>>> 24%18%19%17%4
+2
+>>> (24+18+19+27)%4
+0
+>>> (24+18+19+27)/4
+22.0
+>>> 24+18+19+27
+88
+>>> 88/4
+22.0
+>>> (2+3)*(2+4)
+30
+>>>
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_C = 21
+>>> media = (idade_B + idade_A + idade_C) / 3
+>>>
+>>> print("A média é", media)
+A média é 19.666666666666668
+>>> idade_A = 19
+>>> >>> idade_B = 19
+  File "<python-input-41>", line 1
+    >>> idade_B = 19
+    ^^
+SyntaxError: invalid syntax
+>>> >>> idade_C = 21
+  File "<python-input-42>", line 1
+    >>> idade_C = 21
+    ^^
+SyntaxError: invalid syntax
+>>> >>> media = (idade_B + idade_A + idade_C) / 3
+  File "<python-input-43>", line 1
+    >>> media = (idade_B + idade_A + idade_C) / 3
+    ^^
+SyntaxError: invalid syntax
+>>> >>>
+  File "<python-input-44>", line 1
+    >>>
+    ^^
+SyntaxError: invalid syntax
+>>> >>> print("A média é", media)
+  File "<python-input-45>", line 1
+    >>> print("A média é", media)
+    ^^
+SyntaxError: invalid syntax
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_C = 21
+>>> media = (idade_B + idade_A + idade_C) / 3
+>>>
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_C = 21
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_C = 21
+>>> idade_A = 19
+>>> idade_B = 19
+>>> idade_C = 21
+>>>
+>>> idade_A = 20
+>>> idade_B = 18
+>>> idade_C = 21
+>>> idade_D = 24
+>>> idade_E = 19
+>>> media = (idade_A + idade_B + idade_C + idade_D + idade_E) / 5
+>>>
+>>> idade_A = 20
+>>> >>> idade_B = 18
+  File "<python-input-71>", line 1
+    >>> idade_B = 18
+    ^^
+SyntaxError: invalid syntax
+>>> >>> idade_C = 21
+  File "<python-input-72>", line 1
+    >>> idade_C = 21
+    ^^
+SyntaxError: invalid syntax
+>>> >>> idade_D = 24
+  File "<python-input-73>", line 1
+    >>> idade_D = 24
+    ^^
+SyntaxError: invalid syntax
+>>> >>> idade_E = 19
+  File "<python-input-74>", line 1
+    >>> idade_E = 19
+    ^^
+SyntaxError: invalid syntax
+>>> >>> media = (idade_A + idade_B + idade_C + idade_D + idade_E) / 5
+  File "<python-input-75>", line 1
+    >>> media = (idade_A + idade_B + idade_C + idade_D + idade_E) / 5
+    ^^
+SyntaxError: invalid syntax
+>>>
+>>> idade_A = 19
+>>> idade_B = 20
+>>> idade_C = 21
+>>> idade_D = 22
+>>> idade_E = 25
+>>> media = (idade_A + idade_B + idade_C + idade_D + idade_E) / 5
+>>> print("A média é", media)
+A média é 21.4
+>>> 10/0
+Traceback (most recent call last):
+  File "<python-input-84>", line 1, in <module>
+    10/0
+    ~~^~
+ZeroDivisionError: division by zero
+>>> 2025-1997
+28
+>>> name = input("Qual seu nome?")
+Qual seu nome?print("Olá,", name)
+>>> Caue
+Traceback (most recent call last):
+  File "<python-input-87>", line 1, in <module>
+    Caue
+NameError: name 'Caue' is not defined
+>>> name = input("Qual seu nome?")
+Qual seu nome?print("Olá,", name)
+>>> Caue
+Traceback (most recent call last):
+  File "<python-input-89>", line 1, in <module>
+    Caue
+NameError: name 'Caue' is not defined
+>>> name = input("Qual seu nome?")
+Qual seu nome?print("Olá,", name)caue
+>>> caue
+Traceback (most recent call last):
+  File "<python-input-91>", line 1, in <module>
+    caue
+NameError: name 'caue' is not defined
+>>> name = input("Qual seu nome?")
+Qual seu nome?name = input("Qual seu nome?")
+>>> name = input("Qual seu nome?")
+Qual seu nome? Caue
+>>> print("Olá,", name)
+Olá,  Caue
+>>> name = input("Qual seu sobrenome?")
+Qual seu sobrenome? Castro
+>>> print("Olá,", name)
+Olá,  Castro
+>>> name = input("Qual seu nome?") name = input("Qual seu sobrenome?")
+  File "<python-input-97>", line 1
+    name = input("Qual seu nome?") name = input("Qual seu sobrenome?")
+                                   ^^^^
+SyntaxError: invalid syntax
+>>> name = input("Qual seu sobrenome?")
+Qual seu sobrenome?
+>>> name = input("Qual seu nome?")
+Qual seu nome? Caue
+>>> name = input("Qual seu sobrenome?")
+Qual seu sobrenome? Castro
+>>> print("Olá,", name,sobrenome )
+Traceback (most recent call last):
+  File "<python-input-101>", line 1, in <module>
+    print("Olá,", name,sobrenome )
+                       ^^^^^^^^^
+NameError: name 'sobrenome' is not defined
+>>> name = input("Qual seu sobrenome?")
+Qual seu sobrenome?
+>>> name = input("Qual seu nome?")
+Qual seu nome? Caue
+>>> surname = input("Qual seu sobrenome?")
+Qual seu sobrenome? Castro
+>>> print("Olá,", name,sobrenome )
+Traceback (most recent call last):
+  File "<python-input-105>", line 1, in <module>
+    print("Olá,", name,sobrenome )
+                       ^^^^^^^^^
+NameError: name 'sobrenome' is not defined
+>>> name = input("Qual seu nome?")
+Qual seu nome?caue
+>>> surname = input("Qual seu sobrenome?")
+Qual seu sobrenome?castro
+>>> print("Olá,", name, sobrenome)
+Traceback (most recent call last):
+  File "<python-input-108>", line 1, in <module>
+    print("Olá,", name, sobrenome)
+                        ^^^^^^^^^
+NameError: name 'sobrenome' is not defined
+>>> name = input("Qual seu nome?")
+Qual seu nome? caue
+>>> surname = input("Qual seu sobrenome?")
+Qual seu sobrenome? castro
+>>> print("Olá,", name, surname)
+Olá,  caue  castro
+>>> exit
+
+C:\Users\1137896>notpad.py
+'notpad.py' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\1137896>notepad programa.py
+
+C:\Users\1137896>python programa.py
+olá
+
+C:\Users\1137896>notpad programa .py
+'notpad' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\1137896>notpad programa.py
+'notpad' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\1137896>pyrhon programa p.y
+'pyrhon' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\1137896>python notepad programa.py
+python: can't open file 'C:\\Users\\1137896\\notepad': [Errno 2] No such file or directory
+
+C:\Users\1137896>python programa.py
+olá
+
+C:\Users\1137896>notepad programa.py
+
+C:\Users\1137896>python programa.py
+olá
+Qual seu nome? Caue
+Qual seu sobrenome? Sa
+Olá,  Caue  Sa
+
+C:\Users\1137896>python programa.py
+olá
+Qual seu nome? Caue
+Qual seu sobrenome? Castro
+Olá,  Caue  Castro
+
+C:\Users\1137896>python programa.py
+olá
+Qual seu nome?
