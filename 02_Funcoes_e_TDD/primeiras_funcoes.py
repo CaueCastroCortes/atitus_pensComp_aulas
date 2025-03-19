@@ -13,6 +13,8 @@ def ola_mundo():
 print(numero_favorito())  # Saída: 42
 ola_mundo()  # Saída: Olá, mundo!
 print(soma(1, 2))  # Saída: 3
+
 def subtracao(a,b):
     return a - b
+    
 print(subtracao(1, 2))  # Saída
