@@ -81,5 +81,3 @@ pre-commit install
 
 [Bloco de notas link](CaueCastroCortes/atitus_pensComp_aulas/ArquivoaulaLINK)
 
-number = imput ("Me diga um ano")
-print (int (number) % 4 )
