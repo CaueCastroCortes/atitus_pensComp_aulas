@@ -5,7 +5,7 @@ def minuto_para_segundo(valor):
     return valor * 60
 
 def hora_para_segundo(valor):
-    return valor * 120
+    return valor * 60 * 60
 
 def test():
     assert hora_para_minuto(0) == 0
