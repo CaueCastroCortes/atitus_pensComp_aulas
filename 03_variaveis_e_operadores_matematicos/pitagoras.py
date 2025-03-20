@@ -1,9 +1,9 @@
 def area(largura, altura):
-    return valor (l*a)
+    return largura * altura
 
 
 def perimetro(largura, altura):
-    return valor 2*(l+a)
+    return valor 2*(altura + largura)
 
 
 def hipotenusa(largura, altura):
