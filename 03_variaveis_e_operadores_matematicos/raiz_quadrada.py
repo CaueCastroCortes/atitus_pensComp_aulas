@@ -6,4 +6,4 @@ def test():
     assert raiz_quadrada(16) == 4
     assert raiz_quadrada(25) == 5
 
-print(raiz_quadrada(0))
+print(raiz_quadrada(3))
