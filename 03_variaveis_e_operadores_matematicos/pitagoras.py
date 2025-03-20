@@ -1,13 +1,13 @@
 def area(largura, altura):
-    return valor ** (1/3)
+    return valor (l*a)
 
 
 def perimetro(largura, altura):
-    return valor ** (1/3)
+    return valor 2*(l+a)
 
 
 def hipotenusa(largura, altura):
-    return valor ** (1/3)
+    return valor ** (1/2 + 1/2)
 
 
 assert area(5, 5) == 25
