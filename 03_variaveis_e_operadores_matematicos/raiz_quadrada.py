@@ -1,5 +1,5 @@
 def raiz_quadrada(valor):
-    return math.sqrt(5)
+    return math.sqrt(5,5)
 
 def test():
     assert raiz_quadrada(9) == 3
