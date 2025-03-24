@@ -3,11 +3,11 @@ def area(largura, altura):
 
 
 def perimetro(largura, altura):
-    return 2 * (largura + altura) 
+    return (largura + altura) * (2)
 
 
 def hipotenusa(largura, altura):
-    return (1/2)**(largura**2 + altura**2)
+    return (largura**2 + altura**2)**(1/2)
 
 assert area(5, 5) == 25
 assert area(0, 5) == 0
@@ -20,3 +20,15 @@ assert perimetro(10, 5) == 30
 assert hipotenusa(4, 3) == 5
 assert hipotenusa(6, 8) == 10
 assert hipotenusa(5, 12) == 13
+
+print(area(5, 8))
+print(area(4, 3))
+print(area(7, 2))
+
+print(perimetro(2, 3))
+print(perimetro(5, 6))
+print(perimetro(4, 9))
+
+print(hipotenusa(4, 3))
+print(hipotenusa(6, 8))
+print(hipotenusa(5, 12))
