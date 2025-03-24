@@ -3,7 +3,7 @@ def area(largura, altura):
 
 
 def perimetro(largura, altura):
-    return (largura + altura)*(2)
+    return (largura + altura) * (2)
 
 
 def hipotenusa(largura, altura):
