@@ -1,10 +1,10 @@
 def eh_positivo(numero):
     if numero > 0:
-        return eh_positivo(valor)
+        return True
 
 def eh_negativo(numero):
     if numero < 0:
-        return eh_positivo(valor)
+        return False 
 
 
 def test():
