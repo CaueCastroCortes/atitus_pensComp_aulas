@@ -1,12 +1,12 @@
 def eh_bissexto(ano):
     if (ano % 4 == 0):
         return True
-     else:
+    else:
         return False
 
 #solução professor
 def proximo_bissexto(ano):
-    return (ano + 3) // 4 * 4 
+    return(ano + 3) // 4 * 4 
 
 
 def test():
