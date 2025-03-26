@@ -12,6 +12,8 @@ def eh_par(valor)
         return True
     else: 
         return False
+
+
 def eh_impar(valor)
     return not eh_par(valor)
 
