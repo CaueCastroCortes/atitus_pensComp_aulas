@@ -1,10 +1,10 @@
 def eh_bissexto(ano):
-    if ano % 4 == 0:
+    if (ano % 4 == 0 and ano % 100 !=0):
         return True
     else:
         return False
 def proximo_bissexto(ano):
-    if ano % 4 == 0:
+    if (ano % 4 == 0 and ano % 100 !=0):
         return False
 
 
