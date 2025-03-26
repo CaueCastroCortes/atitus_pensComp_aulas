@@ -1,6 +1,16 @@
 def horoscopo(mes):
-    # TODO
-    pass
+    if mes <= 0:
+        return ("Valor inválido")
+    if mes > 0 and mes <= 3:
+        return ("Você é do signo de Python")        
+    elif mes > 4 and mes <= 6:
+        return ("Você é do signo de Java")
+    elif mes > 7 and mes <= 9:
+        return ("Você é do signo de PHP")
+    elif mes > 10 and mes <= 12:
+        return ("Você é do signo de TypeScript")   
+    elif mes > 12:
+        return ("Valor inválido")
 
 
 assert horoscopo(1) == "Python"

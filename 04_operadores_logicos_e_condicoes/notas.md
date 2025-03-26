@@ -20,3 +20,13 @@ def eh_impar(valor)
 eh_par(10)
 eh_impar(10)
 
+def eh_bissexto(ano):
+    return (ano % 4) == 0
+
+
+ // - É um inteiro 
+
+ def eh_bissexto(ano):
+    if eh_bisssexto(valor):
+        return valor
+    return valor + ( 4 - (valor % 4))    
