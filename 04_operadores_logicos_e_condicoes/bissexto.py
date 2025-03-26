@@ -6,8 +6,9 @@ def eh_bissexto(ano):
 
 def proximo_bissexto(ano):
     if (ano % 4 + 1 == 0)
+        return True
+    else:
         return False
-
 
 def test():
     assert eh_bissexto(0)
