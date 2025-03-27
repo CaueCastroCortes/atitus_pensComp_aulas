@@ -1,7 +1,6 @@
 def fatorial(numero):
-    # Preencher
-    pass
-
+    for numero in rage (5)
+    if  
 
 assert fatorial(0) == 1
 assert fatorial(1) == 1
