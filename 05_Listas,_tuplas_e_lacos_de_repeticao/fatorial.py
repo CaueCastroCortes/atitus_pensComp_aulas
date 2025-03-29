@@ -1,6 +1,7 @@
 def fatorial(numero):
-    for numero in rage (5)
-    if  
+    if numero == 0 or numero == 1:
+        return 1
+
 
 assert fatorial(0) == 1
 assert fatorial(1) == 1

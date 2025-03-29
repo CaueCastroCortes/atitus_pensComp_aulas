@@ -4,8 +4,10 @@ def somatorio(numero)
     resultado = 0 
 
 def somatorio(numero)
-    for i in range(10):
-        print(resultado, 1 ** 1)
+    soma = 0
+    for numero in lista:
+        soma += numero
+    return soma
     # Preencher com um laço e 
     # Somar em 'resultado' algo
    
