@@ -1,8 +1,10 @@
 def baskhara(a, b, c):
+    a,b,c = b**2 - 4*a*c
+    
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
-    pass
+    
 
 
 assert baskhara(1, -3, 2) == [2, 1]
