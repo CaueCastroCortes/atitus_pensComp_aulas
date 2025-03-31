@@ -1,8 +1,8 @@
 def baskhara(a, b, c):
     if (a**2 + b* + c)=0:
-
+        return resultado 
     if numero < 0:
-       return None
+        return None
     resultado = 0
     
     # retorne None se discriminante < 0

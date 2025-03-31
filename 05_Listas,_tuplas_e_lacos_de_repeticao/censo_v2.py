@@ -1,3 +1,15 @@
+input("Digite o seu nome?")
+print("nome")
+int(input("Digite seu ano de nascimento"))
+print("ano")
+input("Você é estudante? Sim ou Não")
+print("Sim ou não")
+input("Você trabalha? Sim ou não")
+print("Sim ou Não")
+input("Se trabalha, qual regime trabalhista?")
+print("regime")
+
+
 MIN_IDADE_APOSENTADORIA = 62
 MAX_SALARIO_MEI = 6750
 ANO_ATUAL = 2024
