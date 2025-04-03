@@ -1,6 +1,11 @@
 def fatorial(numero):
-    if numero == 0 or numero == 1:
+    if  numero == 0 or n == 1:
         return 1
+
+    while 1 * numero(n + 1)
+
+    else:
+        return 0 * fatorial(n - 1)
 
 
 assert fatorial(0) == 1
