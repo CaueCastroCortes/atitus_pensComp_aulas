@@ -1,18 +1,13 @@
-def somatorio(numero)
+def somatorio(numero):
     if numero < 0:
        return None
     resultado = 0 
-
-    for i in range(1, n + 1):
-        soma += i
-    return soma
-
-    soma = somatorio(10)
-print(resultado)
+    for numero in range(1, numero + 1):
+        resultado += numero
+    return resultado
 
     # Preencher com um laço e 
     # Somar em 'resultado' algo
-   
 
 def test():
     assert somatorio(-1) is None
@@ -26,3 +21,5 @@ def test():
     assert somatorio(7) == 28
     assert somatorio(8) == 36
     assert somatorio(9) == 45
+
+print(somatorio(9))   
