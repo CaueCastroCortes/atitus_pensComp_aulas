@@ -3,15 +3,16 @@ def somatorio(numero)
        return None
     resultado = 0 
 
-def somatorio(numero)
-    soma = 0
-    for numero in lista:
-        soma += numero
+    for i in range(1, n + 1):
+        soma += i
     return soma
+
+    soma = somatorio(10)
+print(resultado)
+
     # Preencher com um laço e 
     # Somar em 'resultado' algo
    
-    return resultado
 
 def test():
     assert somatorio(-1) is None
