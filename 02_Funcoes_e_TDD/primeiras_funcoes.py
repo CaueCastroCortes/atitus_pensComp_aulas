@@ -16,5 +16,7 @@ print(soma(1, 2))  # Saída: 3
 
 def subtracao(a,b):
     return a - b
-    
+
+def test()
+
 print(subtracao(1, 2))  # Saída
