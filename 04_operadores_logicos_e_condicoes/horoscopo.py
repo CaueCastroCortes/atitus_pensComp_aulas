@@ -12,7 +12,7 @@ def horoscopo(mes):
     elif mes > 12:
         return ("Valor inválido")
 
-def test()
+def test():
 
 assert horoscopo(1) == "Python"
 assert horoscopo(2) == "Python"

@@ -10,6 +10,7 @@ def eh_impar(numero):
     else:
         return False
 
+def test():
 
 assert eh_par(0)
 assert eh_par(2)

@@ -8,6 +8,7 @@ def eh_negativo(numero):
 
 
 def test():
+    
     assert eh_positivo(1)
     assert eh_positivo(2)
     assert eh_positivo(10)
