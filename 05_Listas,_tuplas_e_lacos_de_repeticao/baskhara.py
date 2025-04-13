@@ -1,6 +1,4 @@
-def baskhara(a, b, c):
 import math
-
 
 def baskhara(a, b, c):
     delta = b**2 - 4*a*c
