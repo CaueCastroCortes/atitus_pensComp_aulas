@@ -1,9 +1,12 @@
 def baskhara(a, b, c):
-    if (a**2 + b* + c)=0:
-        return resultado 
-    if numero < 0:
-        return None
-    resultado = 0
+    delta = b**2 - 4*a*c
+    if delta < 0:
+        return "A equação não possui raízes reais."
+
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    
+    return x1, x2
     
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
@@ -18,3 +21,5 @@ assert baskhara(1, -7, 10) == [2, 5]
 
 assert baskhara(1, 2, 3) is None
 assert baskhara(1, 0, 0) == 0
+
+print(f"As raízes da equação são: {raizes}")
