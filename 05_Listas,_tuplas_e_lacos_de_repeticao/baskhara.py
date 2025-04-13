@@ -14,6 +14,10 @@ def baskhara(a, b, c):
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
 
+A = 1
+B = -3
+c = 2
+
 raizes = (a, b, c)
 print(baskhara(*raizes))
 
