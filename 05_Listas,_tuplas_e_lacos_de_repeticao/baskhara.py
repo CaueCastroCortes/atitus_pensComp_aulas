@@ -13,8 +13,12 @@ def baskhara(a, b, c):
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
-    
-def test()
+
+a = 1
+b = -3
+c = 2
+raizes = (a, b, c)
+print(baskhara(*raizes))
 
 assert baskhara(1, -3, 2) == [2, 1]
 assert baskhara(2, 3, -2) == [-2, 0.5]
