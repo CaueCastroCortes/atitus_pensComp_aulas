@@ -1,23 +1,19 @@
 def desenha_losango(altura):
     if altura % 2 == 0:
-        print("Por favor, insira um valor ímpar para a altura.")
+        print("Por favor, insira uma altura ímpar para um losango simétrico.")
         return
     
     meio = altura // 2
     
-    for i in range(altura):
-        if i <= meio:
-            espacos = meio - i
-            asteriscos = 2 * i + 1
-        else:
-            espacos = i - meio
-            asteriscos = 2 * (altura - i) - 1
-        
-        print(' ' * espacos + '*' * asteriscos)
+    # Parte superior do losango
+    for i in range(meio + 1):
+        print(' ' * (meio - i) + '#' * (2 * i + 1))
+    
+    # Parte inferior do losango
+    for i in range(meio - 1, -1, -1):
+        print(' ' * (meio - i) + '#' * (2 * i + 1))
 
-def test():
-
-    altura = int(input("Digite um valor ímpar para a altura do losango: "))
+altura = int(input("Digite um valor ímpar para a altura do losango: "))
 desenha_losango(altura)
 
 
