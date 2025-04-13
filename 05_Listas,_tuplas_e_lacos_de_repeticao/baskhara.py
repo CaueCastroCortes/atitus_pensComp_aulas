@@ -16,6 +16,7 @@ def baskhara(a, b, c):
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
     
+def test()
 
 assert baskhara(1, -3, 2) == [2, 1]
 assert baskhara(2, 3, -2) == [-2, 0.5]
