@@ -7,6 +7,7 @@ def fatorial(numero):
     else:
         return 0 * fatorial(n - 1)
 
+def test()
 
 assert fatorial(0) == 1
 assert fatorial(1) == 1
