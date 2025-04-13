@@ -1,11 +1,13 @@
 def fatorial(numero):
-    if  numero == 0 or n == 1:
+    if numero < 0:
+        return None
+    elif numero == 0 or numero == 1:
         return 1
-
-    while 1 * numero(n + 1)
-
     else:
-        return 0 * fatorial(n - 1)
+        resultado = 1
+        for i in range(2, numero + 1):
+            resultado *= i
+        return resultado
 
 def test()
 
