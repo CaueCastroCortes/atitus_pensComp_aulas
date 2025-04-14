@@ -1,0 +1,22 @@
+def data_valida(dia, mes, ano):
+    if mes < 1 or mes > 12:
+        return False
+    if ano < 0:
+        return False
+    if dia < 1 or dia > 31:
+        return False
+
+    if mes == 2:
+        if dia > 29:
+            return False
+        if dia == 29:
+            eh_ano_bissexto = ano % 4 == 0
+            return eh_ano_bissexto
+
+    if dia == 31:
+        # mes_com_31_dias: jan, mar, maio, julho, agosto, outubro, dezembro
+        if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12:
+            return True
+        return False
+
+    return True

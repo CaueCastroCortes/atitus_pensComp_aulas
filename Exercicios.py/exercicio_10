@@ -1,0 +1,12 @@
+num = int(input("Digite um número positivo de até três digitos: "))
+
+if num < 0 or num > 999:
+    print("Número inválido")
+
+unidade = num % 10
+dezena = (num // 10) % 10
+centena = (num // 100) % 10
+
+print("Centena: ", centena)
+print("Dezena: ", dezena)
+print("Unidade: ", unidade)

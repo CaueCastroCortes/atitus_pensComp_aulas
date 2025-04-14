@@ -1,0 +1,14 @@
+def operacao(x, y, z):
+    if (y * z) > x:
+        return x
+    if (x + y) > z:
+        return y
+    if (z - y) > x:
+        return z
+    return x + y + z
+
+
+x = int(input('Digite um valor: '))
+y = int(input('Digite um valor: '))
+z = int(input('Digite um valor: '))
+print(operacao(x, y, z))

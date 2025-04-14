@@ -1,0 +1,7 @@
+temp = float(input('Diga a temperatura em Fahrenheit:'))
+
+f_para_c = (temp - 32) / 1.8
+print('A temperatura em graus Celcius é', f_para_c, 'C°')
+
+c_para_f = (1.8 * temp) + 32
+print('A temperatura em Farenheit é', c_para_f, 'F°')

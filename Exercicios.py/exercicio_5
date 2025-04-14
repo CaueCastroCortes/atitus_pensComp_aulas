@@ -1,0 +1,2 @@
+def real_para_dolar(valor, tx_conversao):
+    return valor / tx_conversao

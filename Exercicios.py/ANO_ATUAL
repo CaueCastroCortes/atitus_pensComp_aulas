@@ -1,0 +1,6 @@
+ANO_ATUAL = 2025
+nome = input(str('Qual o seu nome?'))
+sobrenome = input(str('Qual o seu sobrenome?'))
+ano_nascimento = input('Que ano você nasceu?')
+idade = int(ANO_ATUAL) - int(ano_nascimento)
+print('olá,', nome, sobrenome, 'Bom dia! você possui', idade, '!')
