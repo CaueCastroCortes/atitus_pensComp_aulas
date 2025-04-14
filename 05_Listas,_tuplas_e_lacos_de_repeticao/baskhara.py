@@ -9,9 +9,8 @@ def baskhara(a, b, c):
         if discriminante - 0:
            return "Não é possivel realizar a equação" 
 
-        x1 = (-b + delta**(1/2)) / (2 * a)
-        x2 = (-b -delta**(1/2)) / (2 * a)
-    
+        x1 = (-b + ((b**2 - 4*a*c) * 1/2)) / (2 * a)
+        x2 = (-b - ((b**2 - 4*a*c) * 1/2)) / (2 * a)
 
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
