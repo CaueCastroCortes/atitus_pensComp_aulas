@@ -1,14 +1,18 @@
 def baskhara(a, b, c):
-    delta = (b**2) - ((4*a)*c)
-    if delta < 0:
-        return None
-    if delta == 0:    
-        return x1 or x2
-
-    x1 = (-b + delta**(1/2)) / (2 * a)
-    x2 = (-b -delta**(1/2)) / (2 * a)
-    return [x1,x2]
+    discriminante = b**2 - 4*a*c
     
+    while True:
+        if discriminante < 0:
+            return False
+        else:
+            return True
+        if discriminante - 0:
+           return "Não é possivel realizar a equação" 
+
+        x1 = (-b + delta**(1/2)) / (2 * a)
+        x2 = (-b -delta**(1/2)) / (2 * a)
+    
+
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
