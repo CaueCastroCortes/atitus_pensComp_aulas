@@ -1,24 +1,18 @@
-import math
-
 def baskhara(a, b, c):
-    delta = b**2 - 4*a*c
+    delta = (b**2) - ((4*a)*c)
     if delta < 0:
         return None
+    if delta == 0:    
 
-    x1 = (-b + math.sqrt(delta)) / (2*a)
-    x2 = (-b - math.sqrt(delta)) / (2*a)
+    x1 = (-b + delta**(1/2)) / (2 * a)
+    x2 = (-b - delta**(1/2)) / (2 * a)
     
-    return x1, x2
+    return [x1,x2]
     
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
 
-a = 1
-b = -3
-c = 2
-
-raizes = (a, b, c)
 print(baskhara(*raizes))
 
 def test():
