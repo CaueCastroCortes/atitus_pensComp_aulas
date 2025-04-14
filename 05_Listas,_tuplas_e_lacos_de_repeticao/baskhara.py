@@ -1,7 +1,7 @@
 def baskhara(a, b, c):
     delta = (b**2) - ((4*a)*c)
     if delta < 0:
-        return True
+        return x1 or x2
     if delta == 0:    
         return x1 or x2
 
