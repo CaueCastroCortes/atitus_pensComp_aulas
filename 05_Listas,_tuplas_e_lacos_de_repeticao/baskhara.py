@@ -7,7 +7,6 @@ def baskhara(a, b, c):
 
     x1 = (-b + delta**(1/2)) / (2 * a)
     x2 = (-b - delta**(1/2)) / (2 * a)
-    
     return [x1,x2]
     
     # retorne None se discriminante < 0
