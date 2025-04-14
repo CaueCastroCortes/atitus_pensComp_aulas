@@ -4,7 +4,7 @@ def baskhara(a, b, c):
         return None
     if delta == 0:    
         return x1 or x2
-        
+
     x1 = (-b + delta**(1/2)) / (2 * a)
     x2 = (-b - delta**(1/2)) / (2 * a)
     
@@ -13,8 +13,6 @@ def baskhara(a, b, c):
     # retorne None se discriminante < 0
     # retorne apenas um valor se discriminante == 0
     # retorne [x1, x2] nos outros casos
-
-print(baskhara(*raizes))
 
 def test():
 
