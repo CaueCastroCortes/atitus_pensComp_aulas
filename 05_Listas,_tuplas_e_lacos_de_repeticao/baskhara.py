@@ -3,7 +3,7 @@ def baskhara(a, b, c):
     if delta < 0:
         return True
     if delta == 0:    
-        return False
+        return x1 or x2
 
         x1 = (-b + ((b**2 - 4*a*c) * 1/2)) / (2 * a)
         x2 = (-b - ((b**2 - 4*a*c) * 1/2)) / (2 * a)
