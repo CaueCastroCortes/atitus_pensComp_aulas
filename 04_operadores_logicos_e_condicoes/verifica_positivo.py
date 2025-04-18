@@ -27,5 +27,5 @@ def test():
     assert not eh_negativo(1)
     assert not eh_negativo(10)
 
-print(numero eh_negativo)
-print(numero eh_positivo)
+print (eh_positivo(10))
+print (eh_negativo(10))
