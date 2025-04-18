@@ -1,12 +1,13 @@
 def eh_positivo(numero):
-    if numero > 0: 
+    if numero >= 0:
         return True 
-    else: 
-        return False 
+    else:
+        return False
 
 
-        def eh_negativo(numero):
-            return not eh_positivo(numero)
+def eh_negativo(numero):
+    if not (numero >= 0):
+        return True
 
 def test():
     
