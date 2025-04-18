@@ -6,7 +6,6 @@ def eh_negativo(numero):
     if numero < 0:
         return False 
 
-
 def test():
     
     assert eh_positivo(1)

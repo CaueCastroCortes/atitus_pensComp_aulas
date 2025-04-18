@@ -1,15 +1,13 @@
 def eh_par(numero):
-    if ((numero % 2) == 0):
-        return True
-    else: 
-        return False
+    if numero % 2 == 0:
+        return True 
+    else:
+        return False 
+
 
 def eh_impar(numero):
-    if ((numeros % 1) == 0):
-        return True
-    else:
-        return False
-
+    return not eh_par(numero)
+    
 def test():
 
     assert eh_par(0)
