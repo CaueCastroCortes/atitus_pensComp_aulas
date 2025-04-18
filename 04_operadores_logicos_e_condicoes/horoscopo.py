@@ -1,7 +1,7 @@
 def horoscopo(mes):  
     if mes <= 0 or mes > 12:
         return ("Valor inválido")
-    if mes > 1 and mes <= 3:
+    if mes > 0 and mes <= 3:
         return ("Você é do signo de Python")        
     if mes > 4 and mes <= 6:
         return ("Você é do signo de Java")
