@@ -1,8 +1,9 @@
 def metro_para_centimetro(valor):
-     return valor * 10
-    
+    return valor * 100
+
+
 def centimetro_para_metro(valor):
-     return valor / 100
+    return valor / 100
 
 def test():     
      assert metro_para_centimetro(1) == 100
