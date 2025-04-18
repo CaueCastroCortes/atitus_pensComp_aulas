@@ -27,7 +27,7 @@ def test():
     assert horoscopo(0) is None
     assert horoscopo(13) is None
 
-print(horoscopo(1))
+print(horoscopo(0))
 print(horoscopo(4))
 print(horoscopo(7))
 print(horoscopo(10))
