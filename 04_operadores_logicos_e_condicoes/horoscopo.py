@@ -1,4 +1,4 @@
-def horoscopo(mes): 
+def horoscopo(mes):  
     if mes <= 0 or mes > 12:
         return ("Valor inválido")
     if mes > 0 and mes <= 3:
@@ -26,6 +26,3 @@ def test():
     assert horoscopo(-1) is None
     assert horoscopo(0) is None
     assert horoscopo(13) is None
-    
-    
-print (horoscopo(1))
