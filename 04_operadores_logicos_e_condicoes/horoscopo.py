@@ -12,7 +12,7 @@ def horoscopo(mes):
 
 def test():
     assert horoscopo(1) == "Você é do signo de Python"
-    assert horoscopo(2) == "Você é do signo de Python"
+    assert horoscopo(3) == "Você é do signo de Python"
 
     assert horoscopo(4) == "Você é do signo de Java"
     assert horoscopo(6) == "Você é do signo de Java"
