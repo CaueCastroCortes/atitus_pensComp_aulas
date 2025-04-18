@@ -5,8 +5,8 @@ def eh_positivo(numero):
         return False 
 
 
-def eh_negativo(numero):
-    return not eh_positivo(numero)
+        def eh_negativo(numero):
+            return not eh_positivo(numero)
 
 def test():
     
