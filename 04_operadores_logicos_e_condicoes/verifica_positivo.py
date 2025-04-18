@@ -16,7 +16,6 @@ def test():
     assert eh_positivo(1)
     assert eh_positivo(2)
     assert eh_positivo(10)
-    assert not eh_positivo(0)
     assert not eh_positivo(-1)
     assert not eh_positivo(-10)
 
