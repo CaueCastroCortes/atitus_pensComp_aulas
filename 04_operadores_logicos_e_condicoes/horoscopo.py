@@ -27,9 +27,8 @@ def test():
     assert horoscopo(0) == "Valor inválido"
     assert horoscopo(13) == "Valor inválido"
 
-print(horoscopo(1))
-print(horoscopo(4))
-print(horoscopo(7))
-print(horoscopo(10))
-print(horoscopo(-1))
-print(horoscopo(13))
+print(horoscopo(5))
+print(horoscopo(12))
+print(horoscopo(3))
+print(horoscopo(15))
+print(horoscopo(-2))
