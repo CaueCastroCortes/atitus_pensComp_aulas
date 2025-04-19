@@ -1,13 +1,12 @@
 def somatorio(numero):
-    if numero < 0:
-       return None
-    resultado = 0 
-    for numero in range(1, numero + 1):
-        resultado += numero
+    if numero <= -1:
+        return None
+    resultado = 0
+    contador = 1
+    while contador <= numero:
+        resultado = resultado + contador
+        contador = contador + 1
     return resultado
-
-    # Preencher com um laço e 
-    # Somar em 'resultado' algo
 
 def test():
     assert somatorio(-1) is None
