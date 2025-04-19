@@ -1,12 +1,16 @@
-print
+def segredo(valor):
+    if valor < 0 or valor > 10:
+        return False
+    tentativas = 1
+    while (valor):
+        numero = int(input('digite um numero entre 0 e 10:'))
+        if numero < 0 or numero > 10:
+            print('Valor invalido, tente novamente')
+        if numero == valor:
+            print('Segredo descoberto', tentativas, 'tentativas')
+            return True
+        tentativas += 1
 
-numero_secreto = 5
-tentativas = 1 
-palpite = int(input("tente adivinhar o numero:"))
 
-while palpite = numero secreto
-    print("Errado, tente novamente")
-    tentativas += 1
-    palpite = int(input("tente adivinhar o número:"))
 
-print("Parabéns! Você acertou com ", tentativas, "tentativas")
+print(segredo(0))
