@@ -10,21 +10,21 @@ def horoscopo(mes):
     if mes >= 10 and mes <= 12:
         return "Você é do signo de TypeScript"   
 
-def test():
-    assert horoscopo(1) == "Python"
-    assert horoscopo(3) == "Python"
+def test(): 
 
-    assert horoscopo(4) == "Java"
-    assert horoscopo(6) == "Java"
+    assert horoscopo(1) == "Você é do signo de Python"
+    assert horoscopo(2) == "Você é do signo de Python"
 
-    assert horoscopo(7) == "PHP"
-    assert horoscopo(9) == "PHP"
+    assert horoscopo(4) == "Você é do signo de Java"
+    assert horoscopo(6) == "Você é do signo de Java"
 
-    assert horoscopo(10) == "TypeScript"
-    assert horoscopo(12) == "TypeScript"
+    assert horoscopo(7) == "Você é do signo de PHP"
+    assert horoscopo(9) == "Você é do signo de PHP"
 
-    assert horoscopo(-1) is None
-    assert horoscopo(0) is None
-    assert horoscopo(13) is None
+    assert horoscopo(10) == "Você é do signo de TypeScript"
+    assert horoscopo(12) == "Você é do signo de TypeScript"
 
-    
+    assert horoscopo(-1) == "Valor inválido"
+    assert horoscopo(0) == "Valor inválido"
+    assert horoscopo(13) == "Valor inválido"
+
