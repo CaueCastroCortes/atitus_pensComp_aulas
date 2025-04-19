@@ -99,7 +99,6 @@ for entrevista in entrevistas:
                 maior_idade_trabalhando = entrevista
         total_aprovadas += 1
 
-def test()
 
 print("")
 
