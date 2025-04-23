@@ -13,8 +13,8 @@ def desenha_losango(altura):
     for i in range(meio - 1, -1, -1):
         print(' ' * (meio - i) + '#' * (2 * i + 1))
 
-altura = int(input(f"Digite um valor ímpar para a altura do losango: "))
-desenha_losango(altura)
+# altura = int(input(f"Digite um valor ímpar para a altura do losango: "))
+#desenha_losango(altura)
 
-
+# Deixei em comentarios os inputs pois o sistema não consegue ler, sem o usuario inserir a informação
 #Range produz uma lista
