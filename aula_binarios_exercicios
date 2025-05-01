@@ -1,5 +1,5 @@
 def dec_to_bin(val):
-    
+       
     while  dec_to_bin > 0:
          binario_numero = (decimal_numero % 2 ) + binario_numero
          dec_to_bin / 2 
