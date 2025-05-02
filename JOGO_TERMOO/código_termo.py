@@ -3,15 +3,16 @@ import random
 def escolher_dificuldade():
     while True:
         dificuldade_str = input("Escolha a dificuldade (1 - Fácil [5 letras], 2 - Médio [6 letras], 3 - Difícil [7 letras]): ").strip()
-        try:
+        try:    
             dificuldade = int(dificuldade_str)
         except ValueError:
+            # Se a conversão falhar, significa que o usuário não digitou um número válido.   
             print("Digite um número válido!")
             continue
 
         if dificuldade in (1, 2, 3):
             return dificuldade
-        else:
+        else:   
             print("Opção inválida! Escolha 1, 2 ou 3.")
 
 def gerar_dica(palpite, secreta):
@@ -62,13 +63,13 @@ def play_game():
         ]
     }
 
-    print("SEJA BEM-VINDO AO JOGO DE ADIVINHAÇÃO!")
+    print("SEJA BEM-VINDO AO TERMO DA GALERA!")
     print("INSTRUÇÕES:")
     print("• Digite a palavra completa.")
     print("• A dificuldade determina o tamanho da palavra:")
-    print("    1 - Fácil: 5 letras")
-    print("    2 - Médio: 6 letras")
-    print("    3 - Difícil: 7 letras")
+    print("Palavras 1 - Fácil: 5 letras")
+    print("Palavras 2 - Médio: 6 letras")
+    print("Palavras 3 - Difícil: 7 letras")
     print("• O número de tentativas é igual ao número de letras da palavra.")
     print("• Após cada tentativa, você receberá uma dica:")
     print("    - Letras na posição correta: [x]")
@@ -79,7 +80,7 @@ def play_game():
     tamanho_palavra = len(secreta)
     tentativas = tamanho_palavra
 
-    print(f"\nA palavra tem {tamanho_palavra} letras. Você tem {tentativas} tentativas para adivinhá-la.")
+    print(f"A palavra tem {tamanho_palavra} letras. Você tem {tentativas} tentativas para adivinhá-la.")
 
     while tentativas > 0:
         palpite = input("Digite sua palavra: ").lower().strip()
