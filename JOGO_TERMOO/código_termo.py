@@ -101,5 +101,4 @@ def play_game():
     print(f"Suas tentativas acabaram. A palavra correta era: {secreta}")
     print("FIM DO JOGO!")
 
-if __name__ == "__main__":
-    play_game()
+play_game()
