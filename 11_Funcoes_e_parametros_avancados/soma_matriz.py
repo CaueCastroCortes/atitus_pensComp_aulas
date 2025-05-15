@@ -7,6 +7,8 @@ matriz = [
     [4, 5, 6],
     [7, 8, 9],
 ]
+
+
 assert soma_matriz(matriz, 20)
 assert not soma_matriz(matriz, 18)
 assert not soma_matriz(matriz, 21)
