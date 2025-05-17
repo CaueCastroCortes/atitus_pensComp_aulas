@@ -1,19 +1,18 @@
 def fahrenheit_para_celsius(valor):
-  temp = float(input("Diga a temperatura em Fahrenheit: "))
-  f_para_c = (temp - 32) / 1.8
-  print(f"A temperatura em graus Celcius é:  {f_para_c}C°)
+    f_para_c = (valor - 32) / 1.8
+    print(f"A temperatura em graus Celsius é: {f_para_c}C°")
+    return f_para_c
 
-
-def celsius_para_farenheit(valor):
-  temp = float(input("Diga a temperatura em Celsius: "))
-  c_para_f = (1.8 * temp) + 32
-  print(f"A temperatura em graus Fahrenheit é: {c_para_f}F°)
+def celsius_para_fahrenheit(valor):
+    c_para_f = (1.8 * valor) + 32
+    print(f"A temperatura em graus Fahrenheit é: {c_para_f}F°")
+    return c_para_f
 
 def test():
-  assert fahrenheit_para_celsius(104) == 40
-  assert fahrenheit_para_celsius(-13) == -25
+    assert round(fahrenheit_para_celsius(104)) == 40
+    assert round(fahrenheit_para_celsius(-13)) == -25
 
-  assert celsius_para_fahrenheit(40) == 104
-  assert celsius_para_fahrenheit(-25) == -13
+    assert round(celsius_para_fahrenheit(40)) == 104
+    assert round(celsius_para_fahrenheit(-25)) == -13
 
-  assert celsius_para_fahrenheit(fahrenheit_para_celsius(30)) == 30
+    assert round(celsius_para_fahrenheit(fahrenheit_para_celsius(30))) == 30 
