@@ -1,30 +1,29 @@
 def valor_pgto(valor, forma_pgto):
-  valor = float(("Digite o valor a ser pago:"))
-  print("Formas de pagamento: ")
-  print("1 - para PIX")
-  print("2 - Para À Vista")
-  print("3 - Parcelado em 2x sem juros")
-  print("4 - Parcelado em 3x ou mais com juros")
-  pagamento = int(input("Digite o número relacionado com a forma de pagamento que sera realizada."))
+    if forma_pgto == 1:  # PIX
+        resultado = valor - (valor * 0.15)
+    elif forma_pgto == 2:  # À Vista
+        resultado = valor - (valor * 0.10)
+    elif forma_pgto == 3:  # Parcelado em 2x sem juros
+        resultado = valor
+    elif forma_pgto == 4:  # Parcelado em 3x ou mais com juros
+        resultado = valor + (valor * 0.10)
+    else:
+        return "Opção inválida."
 
-  if pagamento == 1:
-      resultado = valor - (valor * (15 / 100))
-      print (f"Valor com desconto de 15%: {resultado}")
-  elif pagamento == 2:
-      resultado = valor - (valor * (10 / 100))
-      print(f"Valor com desconto de 10%: {resultado}")
-  elif pagamento == 3:
-      print(f"Parcelado em 2x sem juros. Valor total {valor}")
-  elif pagamento == 4:
-      resultado = valor + (valor * (10 / 100))
-      print(f"Valor com acréscimo de 10%: {resultado}")
-  else:
-    print("Opção inválida. Por favor, escolha uma das opções listadas.")
+    return resultado  # Agora a função retorna o valor final
 
+# Interface interativa separada do cálculo
+if valor_pgto:
+    valor = float(input("Digite o valor a ser pago: "))
+    print("Formas de pagamento:\n1 - PIX\n2 - À Vista\n3 - Parcelado em 2x sem juros\n4 - Parcelado em 3x ou mais com juros")
+    forma_pgto = int(input("Digite o número correspondente à forma de pagamento: "))
+    
+    resultado = valor_pgto(valor, forma_pgto)
+    print(f"Valor final: {resultado}" if isinstance(resultado, float) else resultado)
 
-
-def test ():
-  assert valor_pgto(100, 1) == 85
-  assert valor_pgto(100, 2) == 90
-  assert valor_pgto(100, 3) == 100
-  assert valor_pgto(100, 4) == 110
+# Testes automatizados
+def test():
+    assert valor_pgto(100, 1) == 85
+    assert valor_pgto(100, 2) == 90
+    assert valor_pgto(100, 3) == 100
+    assert valor_pgto(100, 4) == 110
