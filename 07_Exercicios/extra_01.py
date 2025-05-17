@@ -30,7 +30,7 @@ def texto_com_letra_upper(texto, letra):
             novo_texto += caractere
     return novo_texto
 
-opcao = input("Digite o número da opção: ")
+opcao = ("Digite o número da opção: ")
 
 if opcao == "1":
     if letra_em_texto(texto, letra):
