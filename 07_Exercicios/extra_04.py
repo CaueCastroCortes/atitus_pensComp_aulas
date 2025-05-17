@@ -1,16 +1,12 @@
 def calcula_classe_social(salarios, salario_minimo):
+    """Calcula a classe social com base na renda média em relação ao salário mínimo."""
     if not salarios:
-        return None  
+        return "Lista de salários está vazia."
 
-    total_salarios = 0
-    quantidade_salarios = 0
-    for salario in salarios:
-        total_salarios += salario
-        quantidade_salarios += 1
+    media = sum(salarios) / len(salarios)  # Calcula a média salarial
+    renda_em_salarios_minimos = media / salario_minimo  # Converte para múltiplos do salário mínimo
 
-    media = total_salarios / quantidade_salarios
-    renda_em_salarios_minimos = media / salario_minimo
-
+    # Classificação social baseada na renda
     if renda_em_salarios_minimos <= 1:
         return "E"
     elif renda_em_salarios_minimos <= 2:
@@ -22,17 +18,12 @@ def calcula_classe_social(salarios, salario_minimo):
     else:
         return "A"
 
-salarios_input = input("Digite os salários separados por vírgula: ") #input
-salarios = [float(s) for s in salarios_input.split(",")]
+# Exemplo de uso sem input()
+salarios_exemplo = [2000, 3000, 2500, 4000]  # Lista fixa de salários
+salario_minimo_exemplo = 1300  
 
-salario_minimo = float(input("Digite o valor do salário mínimo: "))
-
-classe = calcula_classe_social(salarios, salario_minimo)
-
-if classe:
-    print(f"A classe social é: {classe}")
-else:
-    print("A lista de salários está vazia.")
+classe_social = calcula_classe_social(salarios_exemplo, salario_minimo_exemplo)
+print(f"A classe social é: {classe_social}")
 
 
 def test(): 
