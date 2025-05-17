@@ -22,7 +22,7 @@ def calcula_classe_social(salarios, salario_minimo):
     else:
         return "A"
 
-salarios_input = input("Digite os salários separados por vírgula: ")
+salarios_input = ("Digite os salários separados por vírgula: ") #input
 salarios = [float(s) for s in salarios_input.split(",")]  # Converte os salários para uma lista de floats
 
 salario_minimo = float(input("Digite o valor do salário mínimo: "))

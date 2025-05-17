@@ -1,5 +1,5 @@
 def valor_pgto(valor, forma_pgto):
-  valor = float(input("Digite o valor a ser pago:")
+  valor = float(input("Digite o valor a ser pago:"))
   print("Formas de pagamento: ")
   print("1 - para PIX")
   print("2 - Para À Vista")
