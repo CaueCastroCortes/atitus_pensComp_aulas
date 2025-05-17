@@ -1,5 +1,5 @@
 def valor_pgto(valor, forma_pgto):
-  valor = float(input("Digite o valor a ser pago:"))
+  valor = float(("Digite o valor a ser pago:"))
   print("Formas de pagamento: ")
   print("1 - para PIX")
   print("2 - Para À Vista")
@@ -7,7 +7,7 @@ def valor_pgto(valor, forma_pgto):
   print("4 - Parcelado em 3x ou mais com juros")
   pagamento = int(input("Digite o número relacionado com a forma de pagamento que sera realizada."))
 
-  if pagamento = 1:
+  if pagamento == 1:
       resultado = valor - (valor * (15 / 100))
       print (f"Valor com desconto de 15%: {resultado}")
   elif pagamento == 2:
