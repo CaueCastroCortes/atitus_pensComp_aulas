@@ -33,11 +33,7 @@ def texto_com_letra_upper(texto, letra):
 texto = input("Digite um texto: ")
 letra = input("Digite a letra que deseja analisar: ")
 
-print("\nEscolha a opção desejada:")
-print("1 - Verificar se a letra está no texto")
-print("2 - Contar quantas vezes a letra aparece no texto")
-print("3 - Mostrar o texto sem a letra")
-print("4 - Mostrar o texto com a letra em maiúsculo")
+
 
 opcao = input("Digite o número da opção: ")
 
