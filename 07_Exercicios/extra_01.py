@@ -30,7 +30,13 @@ def texto_com_letra_upper(texto, letra):
             novo_texto += caractere
     return novo_texto
 
-opcao = ("Digite o número da opção: ")
+
+# Definindo variáveis necessárias para o trecho interativo
+texto = "Pensamento Computacional"
+letra = "a"
+
+# Correção: utilizar input() para solicitar a opção do usuário
+opcao = input("Digite o número da opção: ")
 
 if opcao == "1":
     if letra_em_texto(texto, letra):
@@ -49,6 +55,7 @@ elif opcao == "4":
 else:
     print("Opção inválida.")
 
+
 def test(): 
     assert letra_em_texto("Pensamento Computacional", "a")
     assert letra_em_texto("Pensamento Computacional", " ")
@@ -64,11 +71,14 @@ def test():
     assert texto_sem_letra("Pensamento Computacional", " ") == "PensamentoComputacional"
 
     assert (
-    texto_com_letra_upper("Pensamento Computacional", "a") == "PensAmento ComputAcionAl"
+        texto_com_letra_upper("Pensamento Computacional", "a") 
+        == "PensAmento ComputAcionAl"
     )
     assert (
-    texto_com_letra_upper("Pensamento Computacional", "z") == "Pensamento Computacional"
+        texto_com_letra_upper("Pensamento Computacional", "z") 
+        == "Pensamento Computacional"
     )
     assert (
-    texto_com_letra_upper("Pensamento Computacional", " ") == "Pensamento Computacional"
+        texto_com_letra_upper("Pensamento Computacional", " ") 
+        == "Pensamento Computacional"
     )
