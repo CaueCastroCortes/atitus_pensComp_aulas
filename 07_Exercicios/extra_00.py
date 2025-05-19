@@ -1,11 +1,12 @@
-ANO_ATUAL = 2024
+ANO_ATUAL = 2025
 
 def saudacao(nome, sobrenome, ano_nascimento):
-    # Considera anos de nascimento válidos apenas se forem maiores que 0 e menores que ANO_ATUAL
-    if not (0 < ano_nascimento < ANO_ATUAL):
-        return None
-    idade = ANO_ATUAL - int(ano_nascimento)
-    return f"Olá, {nome} {sobrenome}. Bom dia! Você possui {idade} anos!"
+
+nome = input('Qual o seu nome?')
+sobrenome = input('Qual o seu sobrenome?')
+ano_nascimento = int(input('Que ano você nasceu?'))
+idade = ANO_ATUAL - ano_nascimento
+print(f'olá, "{nome} {sobrenome}". Bom dia! você possui {idade}!')
 
 
 def test():

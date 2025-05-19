@@ -30,12 +30,15 @@ def texto_com_letra_upper(texto, letra):
             novo_texto += caractere
     return novo_texto
 
+texto = input("Digite um texto: ")
+letra = input("Digite a letra que deseja analisar: ")
 
-# Definindo variáveis necessárias para o trecho interativo
-texto = "Pensamento Computacional"
-letra = "a"
+print("\nEscolha a opção desejada:")
+print("1 - Verificar se a letra está no texto")
+print("2 - Contar quantas vezes a letra aparece no texto")
+print("3 - Mostrar o texto sem a letra")
+print("4 - Mostrar o texto com a letra em maiúsculo")
 
-# Correção: utilizar input() para solicitar a opção do usuário
 opcao = input("Digite o número da opção: ")
 
 if opcao == "1":
