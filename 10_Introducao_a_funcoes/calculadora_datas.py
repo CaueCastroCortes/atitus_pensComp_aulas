@@ -7,13 +7,20 @@ MESES_30_DIAS = [4, 6, 9, 11]
 
 
 def eh_bissexto(ano: int) -> bool:
-    # Já feito em aula
-    pass
+    """Verifica se um ano é bissexto."""
+    return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)
 
 
 def total_dias_no_mes(mes: int, ano: int) -> int:
-    # return 28, 29, 30 ou 31
-    pass
+    """Retorna o número total de dias em um determinado mês e ano."""
+    if mes in MESES_31_DIAS:
+        return 31
+    elif mes in MESES_30_DIAS:
+        return 30
+    elif mes == 2:
+        return 29 if eh_bissexto(ano) else 28
+    else:
+        raise ValueError("Mês inválido")
 
 
 assert total_dias_no_mes(1, 2024) == 31
@@ -23,8 +30,9 @@ assert total_dias_no_mes(11, 2024) == 30
 
 
 def formata_data(data: list) -> str:
-    # data = [dia, mes, ano]
-    pass
+    """Formata uma lista [dia, mes, ano] em uma string 'dia/mes/ano'."""
+    dia, mes, ano = data
+    return f"{dia}/{mes}/{ano}"
 
 
 assert formata_data([1, 2, 2024]) == "1/2/2024"
@@ -32,7 +40,12 @@ assert formata_data([1, 12, 2024]) == "1/12/2024"
 
 
 def calcula_diferenca(data1: list, data2: list) -> int:
-    pass
+    """Calcula a diferença em dias entre duas datas."""
+    from datetime import date
+
+    d1 = date(data1[2], data1[1], data1[0])
+    d2 = date(data2[2], data2[1], data2[0])
+    return abs((d2 - d1).days)
 
 
 # Diferenca em dias entre 2/7/2004 e 27/5/2024 é de 7268 dias
