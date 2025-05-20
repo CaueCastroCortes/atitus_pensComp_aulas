@@ -13,6 +13,11 @@ tabela =  [
 
 print(procura_numero(tabela, numero: 15))
 
-def verificando_palindromo(palavra: str)-> bool:
-    for letra in palavra:
-        if palavra 
+def verifica_palindromo(palavra):
+    indice = -1
+    for x in palavra:
+        if palavra[indice] == x:
+            indice = indice -1
+        else:
+            return False
+    return True 
