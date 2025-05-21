@@ -35,7 +35,7 @@ def texto_com_letra_upper(texto, letra):
         if letra == letra_grande:
             novo_texto += letra.upper()
         else:
-            novo_texto = += letra
+            novo_texto += letra
         print(f"Seu texto ficará assim {novo_texto}")
 
 
