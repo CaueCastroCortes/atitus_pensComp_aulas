@@ -1,17 +1,13 @@
 from typing import Optional
 
-def saudacao(nome, sobrenome, titulo: Optional[str] =  'Sr.')-> None:
-    nome in str:
-
-    if sobrenome is str None:
-        return "nome"
+def saudacao(nome: str, sobrenome: Optional[str] = None, titulo: str = 'Sr.') -> str:
+    if nome == '':    
+        return "Olá!"    
+    if sobrenome is None:
+        return f"Olá, {titulo} {nome}"
     else: 
-        return "nome" "sobrenome"
+        return f"Olá, {titulo} {nome} {sobrenome}"
 
-    if titulo is str None:
-        return "nome"
-    else: 
-        return "nome" "sobrenome"
 
 def test():
     assert saudacao("Matheus") == "Olá, Sr. Matheus"
