@@ -1,27 +1,25 @@
 def validador_parenteses(entrada: str) -> bool:
     contador = 0
-    for caractere in entrada:
-        if caractere == '(':
+    for char in entrada:
+        if char == '(':
             contador += 1
-        elif caractere == ')':
+        elif char == ')':
             contador -= 1
-        # Se em algum momento o contador for negativo, 
-        # significa que há fechamento sem abertura correspondente
         if contador < 0:
             return False
     return contador == 0
 
-    
-# Valores válidos
-assert validador_parenteses("()")
-assert validador_parenteses("()()")
-assert validador_parenteses("(())")
-assert validador_parenteses("(()()())")
-assert validador_parenteses("(((())()))")
 
-# Valores inválidos
-assert validador_parenteses(")")
-assert validador_parenteses("(")
-assert validador_parenteses("()(")
-assert validador_parenteses("()()())")
-assert validador_parenteses("(((())())")
+def test():
+    assert validador_parenteses("()")
+    assert validador_parenteses("()()")
+    assert validador_parenteses("(())")
+    assert validador_parenteses("(()()())")
+    assert validador_parenteses("(((())()))")
+
+def test():
+    assert not validador_parenteses(")")
+    assert not validador_parenteses("(")
+    assert not validador_parenteses("()(")
+    assert not validador_parenteses("()()())")
+    assert not validador_parenteses("(((())())")
