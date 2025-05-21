@@ -1,9 +1,13 @@
 def soma_pares(numeros: list, alvo: int) -> bool:
-    for i in range(len(numeros)):
-        for j in range(i + 1, len(numeros)):  # Evita somar o mesmo número duas vezes
-            if numeros[i] + numeros[j] == alvo:
+    for lista in numeros:
+        j = lista
+        for i in numeros:
+            if i + j == alvo:
                 return True
+            else:
+                pass
     return False
+
 
 def test():
     assert soma_pares([1, 2], 4)
