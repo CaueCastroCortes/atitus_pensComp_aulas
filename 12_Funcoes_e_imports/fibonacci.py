@@ -1,4 +1,7 @@
 def fibonacci(x):
+    if x< 0:
+        return None
+    
     if x == 0:
         return
     if x == 1:
