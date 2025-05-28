@@ -1,5 +1,9 @@
 def fibonacci(x):
-    pass
+    if x == 0:
+        return
+    if x == 1:
+        return 1
+    return fibonacci   (x - 1) + fibonacci(x -2)    
 
 
 assert fibonacci(-1) is None

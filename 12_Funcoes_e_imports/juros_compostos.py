@@ -7,7 +7,7 @@ def calcular_juros_compostos_recursivo(principal, taxa, tempo):
     if principal == 0:
         return 1
     else:
-     return principal * ((1 + taxa) ** tempo)
+        return principal * ((1 + taxa) ** tempo)
    
 
 
