@@ -3,8 +3,8 @@ from datetime import date
 
 # Crie método que recebe uma string (mm-dd-aaaa) e retorna uma data
 def str_to_date(date_str):
-    pass
-
+    data_formatada = data_atual.strftime("%m/%d/%Y")
+    return "Data formatada:"
 
 assert str_to_date('10-01-2025') == date(day=10, month=1, year=2025)
 assert str_to_date('10-99-2025') is None
