@@ -1,11 +1,21 @@
 def fatorial_rec(n):
-    # Com recursividade
-    pass
+    if n < 0:
+        return None
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial_rec(n - 1)
 
 
 def fatorial_non_rec(n):
-    # Sem recursividade
-    pass
+    if n < 0:
+        return None
+    
+    resultado = 1
+    for i in range(2, n + 1):
+        resultado *= i
+    
+    return resultado
 
 
 # fatorial(5) = 5  * fatorial(4)
