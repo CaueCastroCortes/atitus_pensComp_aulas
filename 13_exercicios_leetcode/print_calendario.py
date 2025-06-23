@@ -9,17 +9,16 @@ def imprimir_calendario_mes(dia_inicial: int, total_dias: int):
         while len(linha) < 20 and dia <= total_dias:
             if len(linha) > 0 and linha[-1] != '.':
                 linha += '.'
-            if dia < 10:
-                linha += f"{dia}."
-            else:
-                linha += f"{dia}."
+            linha += f"{dia}."
             dia += 1
         calendario.append(linha.rstrip('.'))
         linha = ""
 
     return calendario
 
+
 def test_imprimir_calendario_mes():
+    # Caso 1: mês de 31 dias começando no domingo (0)
     assert imprimir_calendario_mes(0, 31) == [
         "Do.Se.Te.Qu.Qu.Se.Sá",
         ".1..2..3..4..5..6..7",
@@ -29,6 +28,7 @@ def test_imprimir_calendario_mes():
         "29.30.31",
     ]
 
+    # Caso 2: mês de 31 dias começando na segunda (1)
     assert imprimir_calendario_mes(1, 31) == [
         "Do.Se.Te.Qu.Qu.Se.Sá",
         "....1..2..3..4..5..6",
@@ -38,6 +38,7 @@ def test_imprimir_calendario_mes():
         "28.29.30.31",
     ]
 
+    # Caso 3: mês de 31 dias começando na terça (2)
     assert imprimir_calendario_mes(2, 31) == [
         "Do.Se.Te.Qu.Qu.Se.Sá",
         ".......1..2..3..4..5",
