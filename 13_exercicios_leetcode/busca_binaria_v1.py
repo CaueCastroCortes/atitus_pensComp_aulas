@@ -1,6 +1,18 @@
 def busca_binaria(lista: list, valor: int) -> bool:
-    pass
-
-
-assert busca_binaria([1, 3, 5, 7, 9, 11, 13, 15], 7)
-assert not busca_binaria([1, 3, 5, 7, 9, 11, 13, 15], 8)
+    esquerda, direita = 0, len(lista) - 1
+    
+    while esquerda <= direita:
+        meio = (esquerda + direita) // 2
+        valor_meio = lista[meio]
+        
+        if valor_meio == valor:
+            return True
+        elif valor_meio < valor:
+            esquerda = meio + 1
+        else:
+            direita = meio - 1
+    
+    return False
+def test():
+    assert busca_binaria([1, 3, 5, 7, 9, 11, 13, 15], 7)
+    assert not busca_binaria([1, 3, 5, 7, 9, 11, 13, 15], 8)

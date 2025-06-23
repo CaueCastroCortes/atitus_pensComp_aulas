@@ -1,3 +1,4 @@
+import random
 INTRODUCOES = [
     "Tudo bem? É o seguinte...",
     "Você não vai acreditar, mas",
@@ -27,8 +28,12 @@ EVENTOS = [
 
 
 def string_aleatoria(opcoes: list) -> str:
-    pass
+    return random.choice(opcoes)
 
 
 def gerador_desculpas(tarefa: str) -> str:
-    pass
+    introducao = string_aleatoria(INTRODUCOES)
+    objeto = string_aleatoria(OBJETOS)
+    evento = string_aleatoria(EVENTOS)
+    desculpa = f"{introducao} {tarefa} porque {objeto} {evento}"
+    return desculpa

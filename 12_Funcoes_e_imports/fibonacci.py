@@ -1,12 +1,11 @@
 def fibonacci(x):
-    if x< 0:
+    if x < 0:
         return None
-    
     if x == 0:
-        return
+        return 0
     if x == 1:
         return 1
-    return fibonacci   (x - 1) + fibonacci(x -2)    
+    return fibonacci(x - 1) + fibonacci(x - 2) 
 
 def test():
 
