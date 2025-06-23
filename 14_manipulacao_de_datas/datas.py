@@ -1,29 +1,68 @@
 from datetime import date
 
-def delta_dias(d1: date, d2: date) -> int:
-    """
-    Retorna a diferença de dias entre d1 e d2, excluindo o dia final.
-    Sempre não-negativo.
-    """
-    total = abs((d2 - d1).days)
-    return max(0, total - 1)
+def str_to_date(date_str):
+    try:
+        return datetime.strptime(date_str, '%m-%d-%Y').date()
+    except ValueError:
 
 
-# ---------- Testes ----------
-if __name__ == "__main__":
-    from datetime import date
+def test():
+    assert str_to_date('10-01-2025') == date(day=10, month=1, year=2025)
+    assert str_to_date('10-99-2025') is None
 
-    # Exclui o dia final: 01/01/2025 → 02/01/2026 = 366 dias totais → 365
-    assert delta_dias(date(2025, 1, 1), date(2026, 1, 2)) == 365
+def nome_dia_semana(data):
+    dias = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo']
+    return dias[data.weekday()]
 
-    # Intervalo de 1 dia → 0
-    assert delta_dias(date(2025, 1, 1), date(2025, 1, 2)) == 0
+def test():
+    assert nome_dia_semana(date(year=2025, month=1, day=1)) == 'quarta-feira'
+    assert nome_dia_semana(date(year=2025, month=1, day=2)) == 'quinta-feira'
 
-    # Mesma data → 0
-    assert delta_dias(date(2025, 1, 1), date(2025, 1, 1)) == 0
 
-    # Ordem invertida → mesmo resultado
-    assert delta_dias(date(2026, 1, 2), date(2025, 1, 1)) == 365
+def dias_para_finde(data):
+    return (5 - data.weekday()) % 7
+
+def test():
+    assert dias_para_finde(date(year=2025, month=1, day=1)) == 3
+    assert dias_para_finde(date(year=2025, month=1, day=2)) == 2
+
+
+def delta_dias(data_a, data_b):
+    return (data_b - data_a).days
+
+def test():
+    assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 365
+    assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -365
+    assert delta_dias(date(year=2025, month=1, day=1), date(year=2025, month=1, day=2)) == 0
+
+
+def proximo_mes(data_a):
+    prox_mes = data_a.month % 12 + 1
+    prox_ano = data_a.year + (data_a.month // 12)
+    day = min(data_a.day, (date(prox_ano, prox_mes, 1) - date(prox_ano, prox_mes - 1, 1)).days)
+    return date(ano=prox_ano, mes=prox_mes, day=day)
+
+def test():
+    assert proximo_mes(date(year=2025, month=1, day=1)) == date(year=2025, month=2, day=1)
+    assert proximo_mes(date(year=2025, month=1, day=29)) == date(year=2025, month=2, day=28)
+    assert proximo_mes(date(year=2024, month=1, day=29)) == date(year=2024, month=2, day=29)
+    assert proximo_mes(date(year=2025, month=1, day=30)) == date(year=2025, month=2, day=28)
+
+
+
+def data_futuro(data: date) -> str:
+    today = date.today()
+    if data > today:
+        return 1
+    elif data < today:
+        return -1
+    else:
+        return 0
+
+def test():
+    assert data_futuro(date(day=1, month=1, year=2099)) == 1
+    assert data_futuro(date(day=1, month=1, year=1999)) == -1
+    assert data_futuro(date.today()) == 0
 
 
 
