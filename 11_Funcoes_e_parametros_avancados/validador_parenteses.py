@@ -16,8 +16,7 @@ def test():
     assert validador_parenteses("(())")
     assert validador_parenteses("(()()())")
     assert validador_parenteses("(((())()))")
-
-def test():
+#validador invalidos
     assert not validador_parenteses(")")
     assert not validador_parenteses("(")
     assert not validador_parenteses("()(")
